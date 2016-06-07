@@ -22,6 +22,7 @@
 		8E2896621D076ED1009C70E8 /* EndDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2896601D076ED1009C70E8 /* EndDateTableViewCell.swift */; };
 		8E2896631D076ED1009C70E8 /* EndDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896611D076ED1009C70E8 /* EndDateTableViewCell.xib */; };
 		8E2896661D076F9A009C70E8 /* BeginDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */; };
+		8E2896691D0772AC009C70E8 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2896681D0772AC009C70E8 /* NSDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		8E2896601D076ED1009C70E8 /* EndDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndDateTableViewCell.swift; sourceTree = "<group>"; };
 		8E2896611D076ED1009C70E8 /* EndDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndDateTableViewCell.xib; sourceTree = "<group>"; };
 		8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeginDateTableViewCell.xib; sourceTree = "<group>"; };
+		8E2896681D0772AC009C70E8 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		8E0EFED51D0607BF009098C9 /* VirtualAffairsAssignmentEx1 */ = {
 			isa = PBXGroup;
 			children = (
+				8E2896671D077290009C70E8 /* Util */,
 				8E2896641D076ED9009C70E8 /* Controller */,
 				8E2896581D075CF9009C70E8 /* View */,
 				8E0EFED61D0607BF009098C9 /* AppDelegate.swift */,
@@ -111,13 +114,13 @@
 		8E2896581D075CF9009C70E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E2896561D075B48009C70E8 /* ViewController.xib */,
 				8E28965A1D076EB2009C70E8 /* ChooseDateTableViewCell.swift */,
 				8E28965B1D076EB2009C70E8 /* ChooseDateTableViewCell.xib */,
 				8E28965E1D076EC2009C70E8 /* BeginDateTableViewCell.swift */,
+				8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */,
 				8E2896601D076ED1009C70E8 /* EndDateTableViewCell.swift */,
 				8E2896611D076ED1009C70E8 /* EndDateTableViewCell.xib */,
-				8E2896561D075B48009C70E8 /* ViewController.xib */,
-				8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -128,6 +131,14 @@
 				8E0EFED81D0607BF009098C9 /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		8E2896671D077290009C70E8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8E2896681D0772AC009C70E8 /* NSDate.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 				8E2896621D076ED1009C70E8 /* EndDateTableViewCell.swift in Sources */,
 				8E28965F1D076EC2009C70E8 /* BeginDateTableViewCell.swift in Sources */,
 				8E0EFED71D0607BF009098C9 /* AppDelegate.swift in Sources */,
+				8E2896691D0772AC009C70E8 /* NSDate.swift in Sources */,
 				8E28965C1D076EB2009C70E8 /* ChooseDateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
