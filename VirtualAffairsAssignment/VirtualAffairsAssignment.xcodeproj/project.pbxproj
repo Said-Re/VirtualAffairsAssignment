@@ -16,6 +16,12 @@
 		8E0EFEF61D06082B009098C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EFEF51D06082B009098C9 /* Assets.xcassets */; };
 		8E0EFEF91D06082B009098C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EFEF71D06082B009098C9 /* LaunchScreen.storyboard */; };
 		8E2896571D075B48009C70E8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896561D075B48009C70E8 /* ViewController.xib */; };
+		8E28965C1D076EB2009C70E8 /* ChooseDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28965A1D076EB2009C70E8 /* ChooseDateTableViewCell.swift */; };
+		8E28965D1D076EB2009C70E8 /* ChooseDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E28965B1D076EB2009C70E8 /* ChooseDateTableViewCell.xib */; };
+		8E28965F1D076EC2009C70E8 /* BeginDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28965E1D076EC2009C70E8 /* BeginDateTableViewCell.swift */; };
+		8E2896621D076ED1009C70E8 /* EndDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2896601D076ED1009C70E8 /* EndDateTableViewCell.swift */; };
+		8E2896631D076ED1009C70E8 /* EndDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896611D076ED1009C70E8 /* EndDateTableViewCell.xib */; };
+		8E2896661D076F9A009C70E8 /* BeginDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		8E0EFEF81D06082B009098C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0EFEFA1D06082B009098C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E2896561D075B48009C70E8 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		8E28965A1D076EB2009C70E8 /* ChooseDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseDateTableViewCell.swift; sourceTree = "<group>"; };
+		8E28965B1D076EB2009C70E8 /* ChooseDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseDateTableViewCell.xib; sourceTree = "<group>"; };
+		8E28965E1D076EC2009C70E8 /* BeginDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginDateTableViewCell.swift; sourceTree = "<group>"; };
+		8E2896601D076ED1009C70E8 /* EndDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndDateTableViewCell.swift; sourceTree = "<group>"; };
+		8E2896611D076ED1009C70E8 /* EndDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndDateTableViewCell.xib; sourceTree = "<group>"; };
+		8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeginDateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +85,9 @@
 		8E0EFED51D0607BF009098C9 /* VirtualAffairsAssignmentEx1 */ = {
 			isa = PBXGroup;
 			children = (
+				8E2896641D076ED9009C70E8 /* Controller */,
 				8E2896581D075CF9009C70E8 /* View */,
 				8E0EFED61D0607BF009098C9 /* AppDelegate.swift */,
-				8E0EFED81D0607BF009098C9 /* ViewController.swift */,
 				8E0EFEDD1D0607BF009098C9 /* Assets.xcassets */,
 				8E0EFEDF1D0607BF009098C9 /* LaunchScreen.storyboard */,
 				8E0EFEE21D0607BF009098C9 /* Info.plist */,
@@ -99,9 +111,23 @@
 		8E2896581D075CF9009C70E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E28965A1D076EB2009C70E8 /* ChooseDateTableViewCell.swift */,
+				8E28965B1D076EB2009C70E8 /* ChooseDateTableViewCell.xib */,
+				8E28965E1D076EC2009C70E8 /* BeginDateTableViewCell.swift */,
+				8E2896601D076ED1009C70E8 /* EndDateTableViewCell.swift */,
+				8E2896611D076ED1009C70E8 /* EndDateTableViewCell.xib */,
 				8E2896561D075B48009C70E8 /* ViewController.xib */,
+				8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		8E2896641D076ED9009C70E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E0EFED81D0607BF009098C9 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0EFEE11D0607BF009098C9 /* LaunchScreen.storyboard in Resources */,
+				8E2896661D076F9A009C70E8 /* BeginDateTableViewCell.xib in Resources */,
 				8E2896571D075B48009C70E8 /* ViewController.xib in Resources */,
+				8E28965D1D076EB2009C70E8 /* ChooseDateTableViewCell.xib in Resources */,
+				8E2896631D076ED1009C70E8 /* EndDateTableViewCell.xib in Resources */,
 				8E0EFEDE1D0607BF009098C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0EFED91D0607BF009098C9 /* ViewController.swift in Sources */,
+				8E2896621D076ED1009C70E8 /* EndDateTableViewCell.swift in Sources */,
+				8E28965F1D076EC2009C70E8 /* BeginDateTableViewCell.swift in Sources */,
 				8E0EFED71D0607BF009098C9 /* AppDelegate.swift in Sources */,
+				8E28965C1D076EB2009C70E8 /* ChooseDateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
