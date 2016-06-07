@@ -16,7 +16,7 @@ private let kBeginDateHeight = 80
 private let kChooseDateHeight = 130
 private let kEndDateHeight = 80
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TableViewInterface {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -35,10 +35,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         tableView.dataSource = self
         tableView.scrollEnabled = false
+        
+        datePicker = NSDate()
+        beginDate = "Today"
+        endDate = datePicker.formatDateAfterWeek()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    //MARK: - TableViewInterface
+    
+    func updateData(date: NSDate) {
+        datePicker = date
+        if date == NSDate() {
+            beginDate = "Today"
+        } else {
+            beginDate = date.formatDate()
+        }
+        
+        endDate = date.formatDateAfterWeek()
+        tableView.reloadData()
     }
     
     // MARK: - UITableView delegate
@@ -54,8 +72,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    
         let cell = tableView.dequeueReusableCellWithIdentifier(items[indexPath.row], forIndexPath: indexPath)
+        
+        if items[indexPath.row] == kChooseDateTableViewCellIdentifier {
+            (cell as! ChooseDateTableViewCell).tableViewInterface = self
+            
+            (cell as! ChooseDateTableViewCell).chooseDatePicker.date = datePicker
+            
+        } else if items[indexPath.row] == kBeginDateTableViewCellIdentifier {
+            (cell as! BeginDateTableViewCell).dateLabel.text = beginDate
+        } else {
+            (cell as! EndDateTableViewCell).dateEndLabel.text = endDate
+        }
         
         return cell
     }
@@ -63,7 +91,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - IBAction methods
     
     @IBAction func clearDateFromView(sender: UIBarButtonItem) {
-        
+        datePicker = NSDate()
+        beginDate = "Today"
+        endDate = datePicker.formatDateAfterWeek()
+        tableView.reloadData()
     }
 
 }

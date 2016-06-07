@@ -5,11 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EndDateTableViewCell" customModule="VirtualAffairsAssignmentEx1" customModuleProvider="target">
-            <connections>
-                <outlet property="dateLabel" destination="B0q-Xi-r61" id="T27-9i-Tli"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="endDateTableViewCellIdentifier" rowHeight="80" id="QCW-7T-BGM" customClass="EndDateTableViewCell" customModule="VirtualAffairsAssignmentEx1" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
@@ -46,6 +42,9 @@
                     <constraint firstItem="XxE-Yo-YfM" firstAttribute="leading" secondItem="6xY-kR-nhK" secondAttribute="leadingMargin" id="vUB-Qx-ZZL"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="dateEndLabel" destination="B0q-Xi-r61" id="9Pf-Xi-lMi"/>
+            </connections>
             <point key="canvasLocation" x="317" y="346"/>
         </tableViewCell>
     </objects>

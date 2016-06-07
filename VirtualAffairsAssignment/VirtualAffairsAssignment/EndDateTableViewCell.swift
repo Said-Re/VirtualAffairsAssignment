@@ -10,7 +10,7 @@ import UIKit
 
 class EndDateTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateEndLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

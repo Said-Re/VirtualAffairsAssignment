@@ -21,7 +21,7 @@
                         <constraint firstAttribute="height" constant="44" id="zcZ-6S-hAh"/>
                     </constraints>
                     <items>
-                        <navigationItem title="Title" id="2b8-bl-Smw">
+                        <navigationItem title="Schedule" id="2b8-bl-Smw">
                             <barButtonItem key="rightBarButtonItem" title="Clear" id="Id4-F0-f7S">
                                 <connections>
                                     <action selector="clearDateFromView:" destination="-1" id="ads-oP-LxF"/>

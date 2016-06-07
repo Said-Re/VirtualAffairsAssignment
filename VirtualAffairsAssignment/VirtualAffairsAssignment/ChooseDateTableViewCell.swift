@@ -11,9 +11,11 @@ import UIKit
 class ChooseDateTableViewCell: UITableViewCell {
 
     @IBOutlet weak var chooseDatePicker: UIDatePicker!
+    var tableViewInterface : TableViewInterface!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        chooseDatePicker.minimumDate = NSDate()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -21,7 +23,7 @@ class ChooseDateTableViewCell: UITableViewCell {
     }
     
     @IBAction func valueChanged(sender: UIDatePicker) {
-        
+        tableViewInterface.updateData(sender.date)
     
     }
     
