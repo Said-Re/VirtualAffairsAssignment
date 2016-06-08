@@ -12,7 +12,7 @@
 		8E0EFEDE1D0607BF009098C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EFEDD1D0607BF009098C9 /* Assets.xcassets */; };
 		8E0EFEE11D0607BF009098C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EFEDF1D0607BF009098C9 /* LaunchScreen.storyboard */; };
 		8E0EFEEF1D06082B009098C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EFEEE1D06082B009098C9 /* AppDelegate.swift */; };
-		8E0EFEF11D06082B009098C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EFEF01D06082B009098C9 /* ViewController.swift */; };
+		8E0EFEF11D06082B009098C9 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EFEF01D06082B009098C9 /* OverviewViewController.swift */; };
 		8E0EFEF61D06082B009098C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EFEF51D06082B009098C9 /* Assets.xcassets */; };
 		8E0EFEF91D06082B009098C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EFEF71D06082B009098C9 /* LaunchScreen.storyboard */; };
 		8E2896571D075B48009C70E8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896561D075B48009C70E8 /* ViewController.xib */; };
@@ -24,6 +24,20 @@
 		8E2896661D076F9A009C70E8 /* BeginDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */; };
 		8E2896691D0772AC009C70E8 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2896681D0772AC009C70E8 /* NSDate.swift */; };
 		8E28966B1D0774D0009C70E8 /* TableViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28966A1D0774D0009C70E8 /* TableViewInterface.swift */; };
+		8E431C521D0895C200B55506 /* OverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E431C511D0895C200B55506 /* OverviewViewController.xib */; };
+		8E431C531D089B6A00B55506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EFED81D0607BF009098C9 /* ViewController.swift */; };
+		8E431C541D089C0400B55506 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896561D075B48009C70E8 /* ViewController.xib */; };
+		8E431C551D089C0800B55506 /* ChooseDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28965A1D076EB2009C70E8 /* ChooseDateTableViewCell.swift */; };
+		8E431C561D089C0B00B55506 /* ChooseDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E28965B1D076EB2009C70E8 /* ChooseDateTableViewCell.xib */; };
+		8E431C571D089C0E00B55506 /* BeginDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28965E1D076EC2009C70E8 /* BeginDateTableViewCell.swift */; };
+		8E431C581D089C1100B55506 /* BeginDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */; };
+		8E431C591D089C1500B55506 /* EndDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2896601D076ED1009C70E8 /* EndDateTableViewCell.swift */; };
+		8E431C5A1D089C1800B55506 /* EndDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2896611D076ED1009C70E8 /* EndDateTableViewCell.xib */; };
+		8E431C5B1D089C1D00B55506 /* TableViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28966A1D0774D0009C70E8 /* TableViewInterface.swift */; };
+		8E431C5C1D089C2400B55506 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2896681D0772AC009C70E8 /* NSDate.swift */; };
+		8E431C5F1D089C7C00B55506 /* ScheduleItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E431C5D1D089C7C00B55506 /* ScheduleItemTableViewCell.swift */; };
+		8E431C601D089C7C00B55506 /* ScheduleItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E431C5E1D089C7C00B55506 /* ScheduleItemTableViewCell.xib */; };
+		8E431C641D08A17F00B55506 /* ScheduleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E431C631D08A17F00B55506 /* ScheduleItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +49,7 @@
 		8E0EFEE21D0607BF009098C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0EFEEC1D06082B009098C9 /* VirtualAffairsAssignmentEx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualAffairsAssignmentEx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0EFEEE1D06082B009098C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E0EFEF01D06082B009098C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E0EFEF01D06082B009098C9 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		8E0EFEF51D06082B009098C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0EFEF81D06082B009098C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0EFEFA1D06082B009098C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +62,10 @@
 		8E2896651D076F9A009C70E8 /* BeginDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeginDateTableViewCell.xib; sourceTree = "<group>"; };
 		8E2896681D0772AC009C70E8 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		8E28966A1D0774D0009C70E8 /* TableViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewInterface.swift; sourceTree = "<group>"; };
+		8E431C511D0895C200B55506 /* OverviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewViewController.xib; sourceTree = "<group>"; };
+		8E431C5D1D089C7C00B55506 /* ScheduleItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleItemTableViewCell.swift; sourceTree = "<group>"; };
+		8E431C5E1D089C7C00B55506 /* ScheduleItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleItemTableViewCell.xib; sourceTree = "<group>"; };
+		8E431C631D08A17F00B55506 /* ScheduleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +122,16 @@
 		8E0EFEED1D06082B009098C9 /* VirtualAffairsAssignmentEx2 */ = {
 			isa = PBXGroup;
 			children = (
+				8E431C621D08A16800B55506 /* Model */,
+				8E431C611D08A16100B55506 /* View */,
 				8E0EFEEE1D06082B009098C9 /* AppDelegate.swift */,
-				8E0EFEF01D06082B009098C9 /* ViewController.swift */,
+				8E0EFEF01D06082B009098C9 /* OverviewViewController.swift */,
 				8E0EFEF51D06082B009098C9 /* Assets.xcassets */,
 				8E0EFEF71D06082B009098C9 /* LaunchScreen.storyboard */,
 				8E0EFEFA1D06082B009098C9 /* Info.plist */,
+				8E431C511D0895C200B55506 /* OverviewViewController.xib */,
+				8E431C5D1D089C7C00B55506 /* ScheduleItemTableViewCell.swift */,
+				8E431C5E1D089C7C00B55506 /* ScheduleItemTableViewCell.xib */,
 			);
 			path = VirtualAffairsAssignmentEx2;
 			sourceTree = "<group>";
@@ -142,6 +165,21 @@
 				8E2896681D0772AC009C70E8 /* NSDate.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		8E431C611D08A16100B55506 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E431C621D08A16800B55506 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E431C631D08A17F00B55506 /* ScheduleItemModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0EFEF91D06082B009098C9 /* LaunchScreen.storyboard in Resources */,
+				8E431C581D089C1100B55506 /* BeginDateTableViewCell.xib in Resources */,
 				8E0EFEF61D06082B009098C9 /* Assets.xcassets in Resources */,
+				8E431C5A1D089C1800B55506 /* EndDateTableViewCell.xib in Resources */,
+				8E431C561D089C0B00B55506 /* ChooseDateTableViewCell.xib in Resources */,
+				8E431C601D089C7C00B55506 /* ScheduleItemTableViewCell.xib in Resources */,
+				8E431C541D089C0400B55506 /* ViewController.xib in Resources */,
+				8E431C521D0895C200B55506 /* OverviewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0EFEF11D06082B009098C9 /* ViewController.swift in Sources */,
+				8E431C531D089B6A00B55506 /* ViewController.swift in Sources */,
+				8E431C571D089C0E00B55506 /* BeginDateTableViewCell.swift in Sources */,
+				8E0EFEF11D06082B009098C9 /* OverviewViewController.swift in Sources */,
+				8E431C551D089C0800B55506 /* ChooseDateTableViewCell.swift in Sources */,
+				8E431C5F1D089C7C00B55506 /* ScheduleItemTableViewCell.swift in Sources */,
+				8E431C5B1D089C1D00B55506 /* TableViewInterface.swift in Sources */,
 				8E0EFEEF1D06082B009098C9 /* AppDelegate.swift in Sources */,
+				8E431C5C1D089C2400B55506 /* NSDate.swift in Sources */,
+				8E431C591D089C1500B55506 /* EndDateTableViewCell.swift in Sources */,
+				8E431C641D08A17F00B55506 /* ScheduleItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
