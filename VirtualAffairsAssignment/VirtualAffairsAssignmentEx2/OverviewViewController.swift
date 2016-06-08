@@ -11,14 +11,13 @@ import UIKit
 private let kScheduleItemHeightTableViewCellIdentifier = "scheduleItemTableViewCellIdentifier"
 private let kscheduleItemHeight = 80
 
+let kUpdateScheduleNotification = "updateScheduleNotification"
+
 class OverviewViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var beginDate : String!
-    private var endDate : String!
-    private var datePicker : NSDate!
-    
+    private var selectedIndex : Int?
     var scheduleItems : [ScheduleItemModel] = []
     
     override func viewDidLoad() {
@@ -29,11 +28,32 @@ class OverviewViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.allowsMultipleSelectionDuringEditing = false
     
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(OverviewViewController.addNewSchedueItem))
+        navigationItem.title = "Overview"
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(OverviewViewController.updateScheduleList(_:)), name: kUpdateScheduleNotification, object: nil)
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func updateScheduleList(notification: NSNotification) {
+        guard let userInfo = notification.userInfo,
+            let beginDate = userInfo["beginDate"] as? String,
+            let endDate = userInfo["endDate"] as? String else {
+            return
+        }
+        
+        let scheduleItem = ScheduleItemModel(beginDate: beginDate, endDate: endDate)
+        if let _ = selectedIndex {
+            scheduleItems[selectedIndex!] = scheduleItem
+        } else {
+            scheduleItems.append(scheduleItem)
+        }
+        
+        selectedIndex = nil
+        tableView.reloadData()
     }
     
     func addNewSchedueItem() {
@@ -48,7 +68,11 @@ class OverviewViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedIndex = indexPath.row
         
+        let viewController = ViewController(nibName: "ViewController", bundle: nil)
+        navigationController?.pushViewController(viewController, animated: true)
+        viewController.setSchedule(scheduleItems[indexPath.row])
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -70,8 +94,8 @@ class OverviewViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(kScheduleItemHeightTableViewCellIdentifier, forIndexPath: indexPath)
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier(kScheduleItemHeightTableViewCellIdentifier, forIndexPath: indexPath) as! ScheduleItemTableViewCell
+        cell.setModelInView(scheduleItems[indexPath.row])
         
         return cell
     }

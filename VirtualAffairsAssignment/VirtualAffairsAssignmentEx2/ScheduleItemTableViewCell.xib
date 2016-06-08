@@ -64,6 +64,10 @@
                     <constraint firstAttribute="bottomMargin" secondItem="17R-Ib-KmM" secondAttribute="bottom" constant="6.5" id="xvD-DY-Kjm"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="beginDate" destination="d9S-fS-LdA" id="qqv-Rk-WuY"/>
+                <outlet property="endDate" destination="tiK-yt-W4I" id="sgB-aP-FiS"/>
+            </connections>
             <point key="canvasLocation" x="353" y="322"/>
         </tableViewCell>
     </objects>

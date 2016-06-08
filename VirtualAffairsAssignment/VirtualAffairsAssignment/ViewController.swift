@@ -20,9 +20,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var beginDate : String!
-    private var endDate : String!
-    private var datePicker : NSDate!
+    var beginDate : String!
+    var endDate : String!
+    var datePicker : NSDate!
     
     let items = [kBeginDateTableViewCellIdentifier, kChooseDateTableViewCellIdentifier, kEndDateTableViewCellIdentifier]
     let cellHeight = [kBeginDateHeight, kChooseDateHeight, kEndDateHeight]
@@ -36,13 +36,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.scrollEnabled = false
         
-        datePicker = NSDate()
-        beginDate = "Today"
-        endDate = datePicker.formatDateAfterWeek()
+        if let _ = navigationController {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Clear", style: .Plain, target: self, action: #selector(ViewController.clearDateFromView(_:)))
+            navigationItem.title = "Schedule"
+        }
+        
+        setInitialValues()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setInitialValues() {
+        if datePicker == nil || beginDate == nil || endDate == nil {
+            datePicker = NSDate()
+            beginDate = "Today"
+            endDate = datePicker.formatDateAfterWeek()
+        }
     }
     
     //MARK: - TableViewInterface
@@ -98,4 +109,3 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
 }
-

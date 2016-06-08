@@ -10,15 +10,20 @@ import UIKit
 
 class ScheduleItemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var beginDate: UILabel!
+    @IBOutlet weak var endDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func setModelInView(model: ScheduleItemModel) {
+        beginDate.text = model.beginDate
+        endDate.text = model.endDate
     }
     
 }

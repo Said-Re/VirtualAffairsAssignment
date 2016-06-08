@@ -38,6 +38,7 @@
 		8E431C5F1D089C7C00B55506 /* ScheduleItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E431C5D1D089C7C00B55506 /* ScheduleItemTableViewCell.swift */; };
 		8E431C601D089C7C00B55506 /* ScheduleItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E431C5E1D089C7C00B55506 /* ScheduleItemTableViewCell.xib */; };
 		8E431C641D08A17F00B55506 /* ScheduleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E431C631D08A17F00B55506 /* ScheduleItemModel.swift */; };
+		8E431C661D08AB7300B55506 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E431C651D08AB7300B55506 /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		8E431C5D1D089C7C00B55506 /* ScheduleItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleItemTableViewCell.swift; sourceTree = "<group>"; };
 		8E431C5E1D089C7C00B55506 /* ScheduleItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleItemTableViewCell.xib; sourceTree = "<group>"; };
 		8E431C631D08A17F00B55506 /* ScheduleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleItemModel.swift; sourceTree = "<group>"; };
+		8E431C651D08AB7300B55506 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		8E0EFEED1D06082B009098C9 /* VirtualAffairsAssignmentEx2 */ = {
 			isa = PBXGroup;
 			children = (
+				8E431C691D08BCAE00B55506 /* Util */,
 				8E431C621D08A16800B55506 /* Model */,
 				8E431C611D08A16100B55506 /* View */,
 				8E0EFEEE1D06082B009098C9 /* AppDelegate.swift */,
@@ -129,9 +132,6 @@
 				8E0EFEF51D06082B009098C9 /* Assets.xcassets */,
 				8E0EFEF71D06082B009098C9 /* LaunchScreen.storyboard */,
 				8E0EFEFA1D06082B009098C9 /* Info.plist */,
-				8E431C511D0895C200B55506 /* OverviewViewController.xib */,
-				8E431C5D1D089C7C00B55506 /* ScheduleItemTableViewCell.swift */,
-				8E431C5E1D089C7C00B55506 /* ScheduleItemTableViewCell.xib */,
 			);
 			path = VirtualAffairsAssignmentEx2;
 			sourceTree = "<group>";
@@ -170,6 +170,9 @@
 		8E431C611D08A16100B55506 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E431C511D0895C200B55506 /* OverviewViewController.xib */,
+				8E431C5D1D089C7C00B55506 /* ScheduleItemTableViewCell.swift */,
+				8E431C5E1D089C7C00B55506 /* ScheduleItemTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -180,6 +183,14 @@
 				8E431C631D08A17F00B55506 /* ScheduleItemModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		8E431C691D08BCAE00B55506 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8E431C651D08AB7300B55506 /* ViewControllerExtension.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +324,7 @@
 				8E431C5F1D089C7C00B55506 /* ScheduleItemTableViewCell.swift in Sources */,
 				8E431C5B1D089C1D00B55506 /* TableViewInterface.swift in Sources */,
 				8E0EFEEF1D06082B009098C9 /* AppDelegate.swift in Sources */,
+				8E431C661D08AB7300B55506 /* ViewControllerExtension.swift in Sources */,
 				8E431C5C1D089C2400B55506 /* NSDate.swift in Sources */,
 				8E431C591D089C1500B55506 /* EndDateTableViewCell.swift in Sources */,
 				8E431C641D08A17F00B55506 /* ScheduleItemModel.swift in Sources */,
